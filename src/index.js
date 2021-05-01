@@ -13,7 +13,7 @@ const Theme = {
 const classMenu = document.querySelector('.js-menu');
 const menuMarkup = template(massive);
 
-classMenu .insertAdjacentHTML('beforeend', menuMarkup);
+classMenu.insertAdjacentHTML('beforeend', menuMarkup);
 
 //Тема
 const themeChange = document.querySelector('.theme-switch__toggle');
