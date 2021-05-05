@@ -17,7 +17,10 @@ classMenu.insertAdjacentHTML('beforeend', menuMarkup);
 
 //Тема
 const themeChange = document.querySelector('.theme-switch__toggle');
-const body = document.body;
+const body = document.querySelector('body');
+themeChange.checked = localStorage.getItem('theme') === Theme.DARK;
+body.classList.add(localStorage.getItem('theme') === null ? Theme.LIGHT : localStorage.getItem('theme'));
+
 
 themeChange.addEventListener('change', onThemeChange);
 
