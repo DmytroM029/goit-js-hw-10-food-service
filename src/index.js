@@ -40,7 +40,7 @@ function onThemeChange(event){
 function currentTheme(){
     const savedTheme = localStorage.getItem('theme');
 
-    if(currentTheme === `${Theme.DARK}`){
+    if(savedTheme === `${Theme.DARK}`){
         themeSwitcher.checked = true;
         body.classList.add(`${Theme.DARK}`);
     }
